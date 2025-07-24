@@ -90,7 +90,7 @@
 }
 
 .dark {
-  --background: #1a1a1a;
+  --background: #382929;
   --foreground: #ffffff;
   --card: #262626;
   --card-foreground: #ffffff;
@@ -152,7 +152,7 @@
     ESTILO DO CABEÇALHO (HEADER) FIXO COM OPACIDADE E BLUR
 */
 .header-fixed {
-    background-color: rgba(255, 198, 205, 0.486); 
+    background-color: rgba(153, 10, 27, 0.637); 
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);

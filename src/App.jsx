@@ -8,6 +8,7 @@ import Acessorios from './pages/Acessorios';
 import Carrinho from './pages/Carrinho';
 import Checkout from './pages/Checkout';
 import './App.css';
+import NavbarCompleta from './components/Header';
 
 function App() {
   return (
@@ -15,15 +16,20 @@ function App() {
       <Router>
         <div className="flex flex-col min-h-screen">
           <Header />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/acessorios" element={<Acessorios />} />
-            <Route path="/contato" element={<div className="flex-grow container mx-auto p-4 md:p-8 pt-24 md:pt-32"><h1 className="text-4xl font-bold text-center">Página em construção</h1></div>} />
-            <Route path="/metricas" element={<div className="flex-grow container mx-auto p-4 md:p-8 pt-24 md:pt-32"><h1 className="text-4xl font-bold text-center">Página em construção</h1></div>} />
-            <Route path="/jogos" element={<div className="flex-grow container mx-auto p-4 md:p-8 pt-24 md:pt-32"><h1 className="text-4xl font-bold text-center">Página em construção</h1></div>} />
-            <Route path="/carrinho" element={<Carrinho />} />
-            <Route path="/checkout" element={<Checkout />} />
-          </Routes>
+          {/* Adicione padding-top para compensar o header fixo. 
+              pt-20 é um bom ponto de partida, ajuste se necessário. */}
+          <div className="flex-grow pt-20 md:pt-24"> {/* Ajustado aqui */}
+          
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/acessorios" element={<Acessorios />} />
+              <Route path="/contato" element={<div className="flex-grow container mx-auto p-4 md:p-8 pt-20 md:pt-24"><h1 className="text-4xl font-bold text-center">Página em construção</h1></div>} />
+              <Route path="/metricas" element={<div className="flex-grow container mx-auto p-4 md:p-8 pt-20 md:pt-24"><h1 className="text-4xl font-bold text-center">Página em construção</h1></div>} />
+              <Route path="/jogos" element={<div className="flex-grow container mx-auto p-4 md:p-8 pt-20 md:pt-24"><h1 className="text-4xl font-bold text-center">Página em construção</h1></div>} />
+              <Route path="/carrinho" element={<Carrinho />} />
+              <Route path="/checkout" element={<Checkout />} />
+            </Routes>
+          </div>
           <Footer />
         </div>
       </Router>
@@ -32,4 +38,3 @@ function App() {
 }
 
 export default App;
-

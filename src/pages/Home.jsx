@@ -37,7 +37,7 @@ const Home = () => {
         </ul>
         <div className="lg:w-1/3 flex justify-center content-layer">
           <img 
-            src="D:\DEVLOOMs\alice-zinsly-source\alice-zinsly-ecommerce\img\Alice 1.jpg" 
+            src="/images/Alice 1.jpg"
             alt="Foto da Alice" 
             className="rounded-full w-48 h-48 md:w-64 md:h-64 object-cover border-4 border-floral-pink shadow-lg"
           />
