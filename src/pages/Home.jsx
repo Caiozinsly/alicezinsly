@@ -1,8 +1,24 @@
-import React from 'react';
+import React, { useEffect } from 'react'; // Importar useEffect
 import { Link } from 'react-router-dom';
 import { featuredProducts } from '../data/products';
 
 const Home = () => {
+  useEffect(() => {
+    // Seleciona todos os elementos com a classe 'fade-in-element'
+    const fadeElements = document.querySelectorAll('.fade-in-element');
+
+    // Adiciona a classe 'visible' a cada elemento para que a animação de fade-in ocorra
+    // e o conteúdo se torne visível.
+    fadeElements.forEach(element => {
+      element.classList.add('visible');
+    });
+
+    // Se você quiser uma animação baseada em scroll (elementos aparecendo ao rolar),
+    // você precisaria de um IntersectionObserver aqui.
+    // Por enquanto, esta solução simples garante que o conteúdo apareça.
+
+  }, []); // O array vazio garante que este efeito rode apenas uma vez, após a montagem do componente
+
   return (
     <main className="flex-grow container mx-auto p-4 md:p-8 pt-24 md:pt-32">
       {/* Seção Sobre a Alice */}
@@ -54,7 +70,7 @@ const Home = () => {
                 alt={product.name} 
                 className="w-full h-48 object-cover rounded-lg mb-4 shadow-sm"
               />
-              <h3 className="text-xl font-semibold text-text-dark mb-2">{product.name}</h3>
+              <h3 className="text-xl font-semibold text-lg text-text-dark mb-2">{product.name}</h3>
               <p className="text-text-dark text-sm mb-4">{product.description}</p>
               <p className="text-lg font-bold text-text-dark mb-4">R$ {product.price.toFixed(2).replace('.', ',')}</p>
               <Link 
@@ -68,7 +84,8 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Meus Últimos Vídeos */}
+      {/* Meus Últimos Vídeos - Esta seção está comentada para evitar erros de iframe */}
+      {/*
       <section className="mb-8 fade-in-element">
         <h2 className="text-3xl md:text-4xl font-bold text-center text-text-dark mb-6">Meus Últimos Vídeos</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -126,9 +143,9 @@ const Home = () => {
           </div>
         </div>
       </section>
+      */}
     </main>
   );
 };
 
 export default Home;
-
