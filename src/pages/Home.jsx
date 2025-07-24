@@ -93,12 +93,12 @@ const Home = () => {
           
           <div className="bg-white rounded-xl shadow-md overflow-hidden border border-floral-pink">
             <div className="video-embed">
-              <iframe 
+              {/* <iframe 
                 src="https://www.tiktok.com/@amandadorno/video/7527480137970044216" 
                 frameBorder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                 allowFullScreen
-              ></iframe>
+              ></iframe>*/}
             </div>
             <div className="p-4">
               <h3 className="font-semibold text-lg text-text-dark">Desafio de Miçangas!</h3>
