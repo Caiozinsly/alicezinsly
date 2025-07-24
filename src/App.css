@@ -152,7 +152,7 @@
     ESTILO DO CABEÇALHO (HEADER) FIXO COM OPACIDADE E BLUR
 */
 .header-fixed {
-    background-color: rgba(153, 10, 27, 0.637); 
+    background-color: rgba(243, 188, 194, 0.699); 
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
