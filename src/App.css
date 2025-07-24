@@ -152,7 +152,7 @@
     ESTILO DO CABEÇALHO (HEADER) FIXO COM OPACIDADE E BLUR
 */
 .header-fixed {
-    background-color: rgba(255, 198, 205, 0.295); 
+    background-color: rgba(255, 198, 205, 0.486); 
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -166,6 +166,7 @@
 
 /*
     ANIMAÇÃO DE SCROLL (FADE IN)
+    Esta classe precisa de JavaScript para adicionar/remover a classe .visible
 */
 .fade-in-element {
     opacity: 0;
@@ -195,7 +196,7 @@
 */
 .about-section {
     position: relative;
-    overflow: hidden;
+    overflow: visible; /* Garante que o conteúdo não seja cortado */
 }
 
 .content-layer {
@@ -251,7 +252,7 @@
 }
 
 /*
-    ESTILOS PARA VÍDEOS EMBUTIDOS
+    ESTILOS PARA VÍDEOS EMBUTIDOS (MANTIDOS, mas a seção no Home.jsx está comentada)
 */
 .video-embed {
     position: relative;
@@ -360,4 +361,3 @@
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
-

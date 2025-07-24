@@ -25,7 +25,7 @@ const Footer = () => {
           >
             <i className="fab fa-youtube"></i>
           </a>
-          <a 
+          {/*<a 
             href="https://www.tiktok.com/@alicezinsly" 
             target="_blank" 
             rel="noopener noreferrer"
@@ -33,7 +33,7 @@ const Footer = () => {
             className="text-text-dark hover:text-black transition duration-300 text-xl"
           >
             <i className="fab fa-tiktok"></i>
-          </a>
+          </a>*/}
           <a 
             href="https://www.instagram.com/alicezinsly/" 
             target="_blank" 
