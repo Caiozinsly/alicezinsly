@@ -93,16 +93,20 @@ const Header = () => {
             className="text-text-dark hover:text-red-600 transition duration-300 text-2xl"
           >
             <i className="fab fa-youtube"></i>
-            {/*</a>
-          <a 
-            href="https://www.tiktok.com/@alicezinsly" 
-            target="_blank" 
+          </a> {/* <-- Fechamento correto da tag <a> do YouTube */}
+
+          {/* Link do TikTok (comentado corretamente como um elemento JSX)
+          <a
+            href="https://www.tiktok.com/@alicezinsly"
+            target="_blank"
             rel="noopener noreferrer"
-            aria-label="TikTok da Alice" 
+            aria-label="TikTok da Alice"
             className="text-text-dark hover:text-black transition duration-300 text-2xl"
           >
             <i className="fab fa-tiktok"></i>
-          </a>*/}
+          </a>
+          */}
+
           <a 
             href="https://www.instagram.com/alicezinsly/" 
             target="_blank" 
@@ -119,4 +123,3 @@ const Header = () => {
 };
 
 export default Header;
-
