@@ -68,7 +68,8 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Meus Últimos Vídeos 
+      {/* Meus Últimos Vídeos - Esta seção está comentada para evitar erros de iframe */}
+      {/*
       <section className="mb-8 fade-in-element">
         <h2 className="text-3xl md:text-4xl font-bold text-center text-text-dark mb-6">Meus Últimos Vídeos</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -93,7 +94,7 @@ const Home = () => {
           
           <div className="bg-white rounded-xl shadow-md overflow-hidden border border-floral-pink">
             <div className="video-embed">
-              {/* <iframe 
+              <iframe 
                 src="https://www.tiktok.com/@amandadorno/video/7527480137970044216" 
                 frameBorder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
@@ -104,7 +105,7 @@ const Home = () => {
               <h3 className="font-semibold text-lg text-text-dark">Desafio de Miçangas!</h3>
               <p className="text-sm text-gray-600">Criando acessórios super rápidos e divertidos.</p>
             </div>
-          </div> 
+          </div>
           
           <div className="bg-white rounded-xl shadow-md overflow-hidden border border-floral-pink">
             <div className="video-embed">
@@ -123,12 +124,12 @@ const Home = () => {
               <h3 className="font-semibold text-lg text-text-dark">Tour pelo Meu Quarto!</h3>
               <p className="text-sm text-gray-600">Mostrando meus brinquedos e cantinho de criação.</p>
             </div>
-          </div>*/}
+          </div>
         </div>
       </section>
+      */}
     </main>
   );
 };
 
 export default Home;
-
